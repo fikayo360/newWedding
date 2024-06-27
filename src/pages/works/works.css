@@ -1,0 +1,107 @@
+#works{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#worksB{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    background-color: black;
+    border-radius: 10px;
+    align-items: center;
+}
+
+#worksB h1{
+    color: #ffffff;
+    font-size: clamp(3em, 10vw, 18em);
+}
+
+#worksM{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+#wrks
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.wrkItem{
+    width: 45%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrkItem:hover div{
+    display: flex;
+}
+
+.wrkItem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrkItem h1{
+    line-height: 0;
+}
+
+.wrkItem .wrkTxt,.wrkItem .wrkTxt button{
+    color: #ffffff;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.wrkItem span{
+    color: #ffffff;
+    font-size: clamp(1rem, 3vw, 2rem);
+}
+
+.wrkTxt{
+    display:none;
+    flex-direction: column;
+    position: absolute;
+}
+
+.wrkItem .wrkTxt h1{
+    line-height: 0;
+    color: #ffffff;
+}
+
+@media (min-width: 250px) and (max-width: 768px){
+    .wrkItem{
+        width: 90%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 850px){
+    .wrkItem{
+        width: 85%;
+    }
+
+    #wrks
+    {
+        gap: 0.8rem;
+    }
+}
+/* @media (min-width: 579px) and (max-width: 1280px){
+    .wrkItem{
+        width: 30%;
+    }
+} */

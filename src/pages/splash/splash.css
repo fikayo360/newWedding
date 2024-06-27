@@ -1,0 +1,18 @@
+#splash{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: black;
+}
+
+#splash main h2{
+    font-size: clamp(3em, 10vw, 18em);
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    color: #ffffff;
+}
+

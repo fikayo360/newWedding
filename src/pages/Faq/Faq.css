@@ -1,0 +1,54 @@
+#faq{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top:4rem;
+    padding-bottom: 2rem;
+    align-items: center;
+    flex-direction: column;
+}
+#faqB{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    background-color: black;
+    border-radius: 10px;
+    align-items: center;
+}
+
+#faqB h1{
+    color: #ffffff;
+    font-size: clamp(3em, 10vw, 18em);
+}
+
+#faqWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    text-align: left;
+    padding-top: 2rem;
+    padding-left: 5rem;
+}
+
+#faqH{
+    font-size: 1.2rem;
+}
+
+#faqContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+@media (min-width:250px) and (max-width:1024px){
+    #faqWrap{
+        padding-top: 2rem;
+        padding-left: 2rem;
+    }
+}
+

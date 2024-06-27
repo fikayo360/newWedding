@@ -1,0 +1,265 @@
+#footer{
+    width:100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(240, 61%, 7%);
+}
+
+#footer h1,#footer p,#footer ul li a,#footer span,#footer textarea{
+    color:hsl(240, 10%, 90%)
+}
+
+#footer header{
+    display: flex;
+    justify-content: center;
+    padding: 6rem 0rem;
+    width: 100%;
+    height: auto;
+    border-bottom: 0.5px solid hsl(240, 10%, 90%);
+}
+
+#footer header #hw{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer header #hw h1{
+    margin-bottom: 4rem;
+}
+
+#hb{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#hb textarea{
+    width: 15rem;
+    height: 3rem;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: transparent;
+    border-color: hsl(240, 10%, 90%);
+}
+
+#hb textarea::placeholder{
+    color: hsl(240, 10%, 90%);
+}
+
+#hbic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.3px solid hsl(240, 10%, 90%);
+    width: 4rem;
+    height:4rem;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.cover{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-color: hsl(165, 84%, 22%);
+    transform: translateY(100%);
+    transition: transform 0.5s linear;
+}
+
+#hbic img{
+    width: 1.2rem;
+    height: 1.2rem;
+    object-fit: contain;
+    z-index: 3;
+}
+
+#hbic:hover{
+    border-color: transparent;
+}
+
+#hbic:hover .cover{
+    transform: translateX(0%);
+}  
+
+/* */
+
+#footer main{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+#footer main #mwrap{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.mwrapi{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 3px auto;
+    width: 20%;
+    height: auto;
+}
+
+.mwrapi p{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 90%;
+    font-size: clamp(1rem, 3vw, 1.8rem);
+}
+
+.mwrapi h1{
+    margin: 0;
+    padding: 0;
+    text-wrap:nowrap;
+    margin-bottom: 1rem;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+
+}
+
+.mwrapi ul
+{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    gap: 3px;
+}
+
+#footer ul li a{
+    cursor: pointer;
+    font-size: clamp(1rem, 3vw, 1.8rem);
+    transition: color 0.3s ease-in;
+}
+
+#footer ul li a:hover{
+    color: blueviolet;
+}
+
+#mfb{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 8rem;
+}
+
+#mfb h1{
+    font-size: clamp(3em, 15vw, 14em);
+    line-height: 0;
+    margin-bottom: 0;
+}
+
+#mfbL{
+    display: flex;
+    width: 100%;
+    gap:5rem;
+    justify-content: center;
+}
+
+#lr{
+    display: flex;
+    align-items: center;
+}
+
+#lrb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+#lrb img{
+    width: 1.2rem;
+    height: 1.2rem;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+
+
+
+
+@media (min-width:250px) and (max-width:1024px){
+    #mfb{
+        gap: 2rem;
+    }
+
+    #footer main #mwrap{
+        width: 100%;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .mwrapi{
+        padding: 2px auto;
+    }
+
+    .mwrapi,.mwrapi ul{
+        align-items:center;
+    }
+    
+    .mwrapi h1,.mwrapi p{
+       text-align: center;
+       line-height: 30px;
+    }
+}
+
+@media (min-width:250px) and (max-width:480px){
+    .mwrapi{
+        width: 95%;
+        line-height: 15px;
+    }
+
+    .mwrapi ul
+    {
+        gap: 6px;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px){
+    #mfb{
+        gap: 4rem;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px){
+    #mfb{
+        gap: 5.5rem;
+    }
+}
+
+@media (min-width:481px) and (max-width:1024px){
+    .mwrapi{
+        width: 40%;
+        line-height: 15px;
+    }
+
+    .mwrapi ul
+    {
+        gap: 8px;
+    }
+}

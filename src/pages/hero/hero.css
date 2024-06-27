@@ -1,0 +1,188 @@
+#hero{
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-image 1s ease-in-out;
+}
+
+#hero h1,#hero p,#hero h2,#hero ul li a,#hero button{
+    color: #f0eeee;
+}
+
+#hHead{
+    position: absolute;
+    top: 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#hero header nav{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#hero header nav img{
+display: none;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+#hero header nav h2{
+    line-height: 2rem;
+  }
+
+#hero header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:1.2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#hero header nav ul li a{
+    cursor: pointer;
+    transition: color 0.2s ease-in;
+}
+#hero header nav ul li a:hover{
+    color: hsl(165, 84%, 22%);
+}
+
+.navMobile{
+    display: none;
+}
+
+ .active{
+    position: fixed;
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: hsl(240, 61%, 7%);
+}
+
+.navMobile header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navMobile header #hWrap{
+    display: flex;
+    width: 88%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navMobile header #hWrap h1{
+    font-size: clamp(3rem, 3vw, 4.5rem);
+}
+
+.navMobile header #hWrap img{
+    width: 20px;
+    height: 20px;
+}
+
+#nmain{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+ #nmain ul{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    list-style: none;
+}
+
+.navMobile main ul li a{
+    font-size: clamp(2rem, 3vw, 2.5rem);
+}
+
+
+#hero main{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+#hero main h2{
+    font-size: clamp(1.5rem, 5vw, 5.5rem);
+}
+
+#hero main p{
+    width: 80%;
+    font-size: clamp(1rem, 1vw, 4rem);
+}
+
+.button{
+    height: 4rem;
+    width: 20rem;
+    background-color: transparent;
+    border: 0.5px solid rgb(247, 246, 246);
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.button span{
+    font-weight: 200;
+    color: #ffffff;
+    font-size: clamp(1rem, 3vw, 1.8rem);
+    z-index: 3;
+}
+
+.btnOver{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: hsl(165, 84%, 22%);
+    transform: translateX(-100%);
+    transition: transform 0.5s linear;
+}
+
+.button:hover{
+    border-color: transparent;
+}
+
+.button:hover .btnOver{
+    transform: translateX(0%);
+}
+
+
+@media (min-width: 250px) and (max-width: 1024px){
+    #hero header nav ul{
+        display: none;
+    }
+
+    #hero header nav img{
+        display: block;
+    }
+
+    #hero main button{
+        height: 3.2rem;
+    }
+}
