@@ -22,15 +22,12 @@ export const Hero =  () => {
 
     const [currentImage, setCurrentImage] = useState(0);
     const [images] = useState([
-        './ph3.jpg',
-        './ph4.jpg',
         './ph5.jpg',
         './ph7.jpg',
     ])
 
     const [mimages] = useState([
         './mph4.jpg',
-        './mph5.jpg',
         './mph6.jpg'
     ])
 
@@ -66,17 +63,17 @@ export const Hero =  () => {
         })
     },[inView])
 
-    useGSAP(()=>{
-        gsap.from('#hHead',{
-            scrollTrigger: {
-                trigger: '#hero',
-                start: 'top top', 
-            },
-            duration: 1.2,
-            y:'-100%',
-            ease:'power2.in'
-        })
-    },[])
+    // useGSAP(()=>{
+    //     gsap.from('#hHead',{
+    //         scrollTrigger: {
+    //             trigger: '#hero',
+    //             start: 'top top', 
+    //         },
+    //         duration: 1.2,
+    //         y:'-30%',
+    //         ease:'power2.in'
+    //     })
+    // },[])
 
     useGSAP(()=>{
         gsap.from('.main',{
@@ -84,8 +81,8 @@ export const Hero =  () => {
                 trigger: '#hero',
                 start: 'top top', 
             },
-            duration: 1.2,
-            y:'60%',
+            duration:0.5,
+            y:'-100',
             ease:'power2.in'
         })
     },[])

@@ -2,11 +2,11 @@ import './footer.css'
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useInView } from "react-intersection-observer";
+import ScrollTrigger from 'gsap/src/ScrollTrigger';
 
 export const Footer = () => {
-    const { ref, inView } = useInView({threshold:0.1});
     gsap.registerPlugin(useGSAP);
-
+    gsap.registerPlugin(ScrollTrigger) 
     useGSAP(()=>{
         gsap.fromTo(".upp",
             { y: 0 },
@@ -22,11 +22,15 @@ export const Footer = () => {
 
     useGSAP(()=>{
         gsap.from(".fT",{
-            y:'-80',
+            scrollTrigger: {
+                trigger: '#footer',
+                start: 'top top', 
+            },
+            y:'-40',
             duration:2,
             ease:'power1.in'
         });
-    },[inView])
+    },[])
    
 
     return(
@@ -82,7 +86,7 @@ export const Footer = () => {
                 </div>
 
                 <div id='mfb'>
-                    <h1 className='fT' ref={ref}>Fikayo Adele </h1>
+                    <h1 className='fT'>Fikayo Adele </h1>
                     <div id='mfbL'>
                         <p>All rights reserved 2024</p>
                         <div id='lr'>
