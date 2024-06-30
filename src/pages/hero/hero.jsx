@@ -50,7 +50,7 @@ export const Hero =  () => {
     useEffect(() => {
         const interval = setInterval(() => {
             handleNext();
-        }, 10000);
+        }, isMobile()?20000:15000);
 
         return () => clearInterval(interval);
     }, [currentImage]); 

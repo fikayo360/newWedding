@@ -58,10 +58,11 @@ display: none;
 
 .navMobile{
     display: none;
+    position: fixed;
+    top: 0;
 }
 
  .active{
-    position: fixed;
     display: flex;
     z-index: 5;
     width: 100%;
@@ -80,7 +81,7 @@ display: none;
 
 .navMobile header #hWrap{
     display: flex;
-    width: 88%;
+    width: 90%;
     justify-content: space-between;
     align-items: center;
 }
