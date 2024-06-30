@@ -28,7 +28,8 @@ export const Hero =  () => {
 
     const [mimages] = useState([
         './mph4.jpg',
-        './mph6.jpg'
+        './mph6.jpg',
+        './mph8.jpg'
     ])
 
     const isMobile = () => window.innerWidth <= 768;
@@ -63,17 +64,17 @@ export const Hero =  () => {
         })
     },[inView])
 
-    // useGSAP(()=>{
-    //     gsap.from('#hHead',{
-    //         scrollTrigger: {
-    //             trigger: '#hero',
-    //             start: 'top top', 
-    //         },
-    //         duration: 1.2,
-    //         y:'-30%',
-    //         ease:'power2.in'
-    //     })
-    // },[])
+    useGSAP(()=>{
+        gsap.from('#hHead',{
+            scrollTrigger: {
+                trigger: '#hero',
+                start: 'top top', 
+            },
+            duration: 0.5,
+            y:isMobile()?'-10':'-100',
+            ease:'power2.in'
+        })
+    },[])
 
     useGSAP(()=>{
         gsap.from('.main',{
@@ -82,7 +83,7 @@ export const Hero =  () => {
                 start: 'top top', 
             },
             duration:0.5,
-            y:'-100',
+            y:isMobile()?'10':'100',
             ease:'power2.in'
         })
     },[])

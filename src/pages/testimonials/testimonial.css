@@ -1,6 +1,6 @@
 
 #testiB{
-    width: 100%;
+    width: 90%;
     min-height: 50vh;
     display: flex;
     justify-content: flex-start;
@@ -8,6 +8,7 @@
     background-color: black;
     border-radius: 10px;
     align-items: center;
+    overflow: hidden;
 }
 
 #testiB h1{
@@ -52,7 +53,7 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    border: 0.3px solid grey;
+    border: 0.3px solid hsl(240, 10%, 90%);
     justify-content: center;
     gap: 1rem;
 }

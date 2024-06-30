@@ -7,7 +7,7 @@
 }
 
 #serviceB{
-    width: 100%;
+    width: auto;
     min-height: 50vh;
     justify-content: flex-start;
     display: flex;
@@ -15,6 +15,7 @@
     border-radius: 10px;
     align-items: center;
     background-color: black;
+    overflow: hidden;
 }
 
 #serviceB h1{

@@ -6,16 +6,16 @@ import ScrollTrigger from 'gsap/src/ScrollTrigger';
 
 export const Footer = () => {
     gsap.registerPlugin(useGSAP);
-    gsap.registerPlugin(ScrollTrigger) 
+    gsap.registerPlugin(ScrollTrigger)
+    const isMobile = () => window.innerWidth <= 768; 
     useGSAP(()=>{
         gsap.fromTo(".upp",
             { y: 0 },
             {
-              y: -7, 
-              duration: 0.8,
+              y: -5, 
+              duration: 2,
               ease: "bounce",
               repeat: -1, 
-              yoyo: true 
             }
           );
     })
@@ -26,8 +26,8 @@ export const Footer = () => {
                 trigger: '#footer',
                 start: 'top top', 
             },
-            y:'-40',
-            duration:2,
+            y:isMobile?'-20':'-40',
+            duration:1,
             ease:'power1.in'
         });
     },[])

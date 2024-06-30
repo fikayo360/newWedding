@@ -5,16 +5,17 @@ import { useInView } from "react-intersection-observer";
 
 export const Splash = () => {
     gsap.registerPlugin(useGSAP);
+    const isMobile = () => window.innerWidth <= 768;
 
     useGSAP(()=>{
         gsap.fromTo("#splashH",
             { opacity: 0 }, 
             {
               opacity:1, 
-              duration: 1.6,
+              duration: isMobile()?3:1.6,
               ease: 'power2.in',
-              repeat: -1,
-              yoyo: true 
+              repeat: !isMobile() && -1,
+              yoyo: !isMobile() && true 
             }
           );
     })

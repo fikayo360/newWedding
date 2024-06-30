@@ -182,10 +182,6 @@ display: none;
         display: block;
     }
 
-    #hero main button{
-        height: 3.2rem;
-    }
-
     #hero{
         transition: background-image 0.5s ease-in;
     }
@@ -196,5 +192,19 @@ display: none;
         background-color: rgba(0, 0, 0, 0.801);
         z-index: 3;
         position: absolute;
+    }
+}
+
+@media (min-width: 250px) and (max-width: 700px){
+    .button{
+        width: 50%;
+        height: 3rem;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1024px){
+    .button{
+        width: 55%;
+        height: 4.5rem;
     }
 }
