@@ -192,7 +192,7 @@ display: none;
 @media (min-width: 250px) and (max-width: 1024px){
     #hero header nav ul{
         display: none;
-    }
+    }   
 
     #hero header nav img{
         display: block;
