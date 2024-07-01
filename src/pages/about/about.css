@@ -9,7 +9,6 @@
 #aboutB{
     width: auto;
     min-height:50vh;
-    border-radius: 10px;
     background-color:black;
     display: flex;
     justify-content: flex-start;

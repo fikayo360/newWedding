@@ -224,16 +224,17 @@
     }
 
     .mwrapi p{
-       width: 80%;
+       width: 90%;
      }
 
     .mwrapi,.mwrapi ul{
         align-items:left;
     }
     
-    .mwrapi h1,.mwrapi p{
+    .mwrapi h1{
        text-align: left;
        line-height: 30px;
+       margin-bottom: 0.7rem;
     }
 }
 
@@ -245,7 +246,7 @@
 
     .mwrapi ul
     {
-        gap: 6px;
+        gap: 12px;
     }
     #lrb img{
         width: 0.9rem;
@@ -256,6 +257,10 @@
         width: 3.5rem;
         height:3.5rem;
     }
+
+    .mwrapi p{
+        line-height: 25px;
+      }
 }
 
 @media (min-width:481px) and (max-width:768px){
@@ -266,12 +271,23 @@
         width: 1rem;
         height: 1rem;
     }
+
+    .mwrapi p{
+        line-height: 35px;
+      }
 }
 
 @media (min-width:769px) and (max-width:1024px){
     #mfb{
         gap: 5.5rem;
     }
+
+    .mwrapi p{
+        line-height: 30px;
+      }
+      .mwrapi h1{
+        margin-bottom: 1rem;
+     }
 }
 
 @media (min-width:481px) and (max-width:1024px){
@@ -282,6 +298,6 @@
 
     .mwrapi ul
     {
-        gap: 8px;
+        gap: 18px;
     }
 }

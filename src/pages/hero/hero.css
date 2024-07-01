@@ -81,7 +81,7 @@ display: none;
 
 .navMobile header #hWrap{
     display: flex;
-    width: 90%;
+    width: 80%;
     justify-content: space-between;
     align-items: center;
 }
@@ -126,11 +126,12 @@ display: none;
 }
 
 #hero main h2{
-    font-size: clamp(1.5rem, 5vw, 5.5rem);
+    font-size: clamp(2.2rem, 5vw, 5.5rem);
+    width: 80%;
 }
 
 #hero main p{
-    width: 80%;
+    width: 70%;
     font-size: clamp(1rem, 1vw, 4rem);
 }
 
@@ -172,6 +173,21 @@ display: none;
     transform: translateX(0%);
 }
 
+#hero{
+    z-index: 1;
+}
+
+#hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#160e0e;       
+    opacity: 0.88;
+}
+
 
 @media (min-width: 250px) and (max-width: 1024px){
     #hero header nav ul{
@@ -186,13 +202,7 @@ display: none;
         transition: background-image 0.5s ease-in;
     }
 
-    #hero::before{
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.801);
-        z-index: 3;
-        position: absolute;
-    }
+ 
 }
 
 @media (min-width: 250px) and (max-width: 700px){

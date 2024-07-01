@@ -23,6 +23,7 @@ export const Hero =  () => {
     const [currentImage, setCurrentImage] = useState(0);
     const [images] = useState([
         './ph5.jpg',
+        './ph6.jpg',
         './ph7.jpg',
     ])
 
@@ -71,7 +72,7 @@ export const Hero =  () => {
                 start: 'top top', 
             },
             duration: 0.5,
-            y:isMobile()?'-10':'-100',
+            y:isMobile()?'-20':'-40',
             ease:'power2.in'
         })
     },[])
@@ -83,7 +84,7 @@ export const Hero =  () => {
                 start: 'top top', 
             },
             duration:0.5,
-            y:isMobile()?'10':'100',
+            y:isMobile()?'20':'70',
             ease:'power2.in'
         })
     },[])
@@ -104,12 +105,12 @@ export const Hero =  () => {
                 
                 <main id='nmain' ref={ref}>
                     <ul>
-                        <li className='mbi'><a href='#hero'>home</a></li>
-                        <li className='mbi'><a href='#about'>about</a></li>
-                        <li className='mbi'><a href='#services'>services</a></li>
-                        <li className='mbi'><a href='#works'>works</a></li>
-                        <li className='mbi'><a href='#reviews'>reviews</a></li>
-                        <li className='mbi'><a href='#footer'>contact</a></li>
+                        <li className='mbi' onClick={hidMobileNav} ><a href='#hero'>home</a></li>
+                        <li className='mbi' onClick={hidMobileNav}><a href='#about'>about</a></li>
+                        <li className='mbi' onClick={hidMobileNav}><a href='#services'>services</a></li>
+                        <li className='mbi' onClick={hidMobileNav}><a href='#works'>works</a></li>
+                        <li className='mbi' onClick={hidMobileNav}><a href='#reviews'>reviews</a></li>
+                        <li className='mbi' onClick={hidMobileNav}><a href='#footer'>contact</a></li>
                     </ul>
                 </main>
             </div>

@@ -5,7 +5,7 @@ export const Testimonial = () => {
        
      <div id='reviews'>
              <div id='testiB' >
-                <h1>Testimonials </h1>
+                <h1>reviews </h1>
             </div>
             <div id='rWrap'>
             <div id='allReviews'>
